@@ -26,7 +26,7 @@ git config --global user.email "smyhvae@163.com"
 
 （1）基于master分支，创建一个新的分支，起名为`feature_item_recommend`：
 
-```
+```git
 $ git checkout -b feature_item_recommend
 
 Switched to a new branch 'feature_item_recommend'
@@ -35,7 +35,7 @@ Switched to a new branch 'feature_item_recommend'
 上面这行命令，相当于：
 
 
-```bash
+```git
 $ git branch feature_item_recommend    // 创建新的分支
 
 $ git checkout feature_item_recommend  //切换到新的分支
@@ -136,7 +136,7 @@ git config  user.name ""
 
 然后，当我们再输入`git pull`等命令行时，就会被要求重新输入*新的*账号密码。此时，密码就可以修改成功了。最后，我们还要输入如下命令，还原当前仓库的用户名：
 
-```
+```bash
 git config user.name "smyhvae"
 ```
 

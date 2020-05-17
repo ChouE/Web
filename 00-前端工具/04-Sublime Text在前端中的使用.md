@@ -1,18 +1,12 @@
 
 
-
-
-
-
-
-
 ### 新建文件时快速生成Html
 
 **安装如下插件：**
 
-- FileHeader：自动创建文件开头模板，并且会根据最后的保存时间修改更新时间。[官网链接](https://github.com/shiyanhui/FileHeader)。
-- CSS Format：css格式化。
-- Emmet：它能够让你在编辑器中书写CSS和HTML的缩写并且动态地拓展它，是一个能大幅度提高前端开发效率的一个工具。这个软件的安装过程比较久。[官网教程](http://docs.emmet.io/)。
+- `FileHeader`：自动创建文件开头模板，并且会根据最后的保存时间修改更新时间。[官网链接](https://github.com/shiyanhui/FileHeader)。
+- `CSS Format`：css格式化。
+- `Emmet`：它能够让你在编辑器中书写CSS和HTML的缩写并且动态地拓展它，是一个能大幅度提高前端开发效率的一个工具。这个软件的安装过程比较久。[官网教程](http://docs.emmet.io/)。
 
 **开始使用：**
 
