@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-05-13 18:21:31
+ * @LastEditTime: 2020-05-17 16:49:20
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \Web\00-前端工具\06-chrome浏览器.md
+--> 
 
 
 
@@ -5,7 +13,7 @@
 
 ### 控制台查看源码
 
-控制台的`Sources`标签可以查看源码。按住快捷键「cmd + P」，可以根据文件名查找源码文件。
+控制台的`Sources`标签可以查看源码。按住快捷键「Ctrl + P」/ F12 ，可以根据文件名查找源码文件。
 
 
 
