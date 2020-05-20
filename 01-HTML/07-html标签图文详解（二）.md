@@ -584,12 +584,12 @@ style="border-collapse:collapse;"
  - `action`：指定表单数据的处理程序，一般是PHP，如：action=“login.php”
  - `method`：表单数据的提交方式，一般取值：get(默认)和post
 
-注意：表单和表格嵌套时，是在<form>标记中套<table>标记。
+注意：表单和表格嵌套时，是在`<form>`标记中套`<table>`标记。
 
-form标签里面的action属性和method属性，在《Ajax》课程上给大家讲解。稍微说一下：action属性就是表示，表单将提交到哪里。 method属性表示用什么HTTP方法提交，有get、post两种。
+`form`标签里面的`action`属性和`method`属性，在《Ajax》课程上给大家讲解。稍微说一下：`action`属性就是表示，表单将提交到哪里。 `method`属性表示用什么HTTP方法提交，有get、post两种。
 
 **get提交和post提交的区别：**
-
+	
 GET方式：
 将表单数据，以"name=value"形式追加到action指定的处理程序的后面，两者间用"?"隔开，每一个表单的"name=value"间用"&"号隔开。
 特点：只适合提交少量信息，并且不太安全(不要提交敏感数据)、提交的数据类型只限于ASCII字符。

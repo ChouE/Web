@@ -100,8 +100,8 @@ VS Code用得熟不熟，首先就看你是否会用快捷键。以下列出的�
 | Cmd + Enter | Ctrl + Enter | 在当前行下面新增一行，然后跳至该行 | **即使光标不在行尾，也能快速向下插入一行** |
 | Option + ↑ |  Alt + ↑| 将代码向上移动 | 很常用 |
 | Option + ↓ |  Alt + ↓| 将代码向下移动 | 很常用 |
-| Option + Shift + ↑ |  Alt + Shift + ↑| 将代码向上复制 | 很常用 |
 | Option + Shift + ↓ |  Alt + Shift + ↓| 将代码向下复制 | 很常用 |
+| Option + Shift + ↑ |  Alt + Shift + ↑| 将代码向上复制 | 很常用 |
 
 ### JS语言相关
 
