@@ -1,24 +1,41 @@
 <!--
  * @Author: your name
  * @Date: 2020-05-17 16:40:41
- * @LastEditTime: 2020-05-20 15:22:03
+ * @LastEditTime: 2020-05-21 00:22:38
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \Web\00-前端工具\test.html
 -->
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    
-</head>
+    <style>
+      form {
+        width: 100%;
+        /* 最大宽度*/
+        max-width: 400px;
+        /* 最小宽度*/
+        min-width: 200px;
+        margin: 0 auto;
+        font-family: "Microsoft Yahei";
+        font-size: 20px;
+      }
 
-<body>
+      input {
+        display: block;
+        width: 100%;
+        height: 30px;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+
+  <body>
     <!-- <p>&nbsp;&lt;&gt;&amp;&copy;</p> -->
-    <form action="">
+    <!-- <form action="">
         姓名：<input type="text"><br>
         性别：<input type="text"><br>
         密码：<input type="password" size="50"><br>
@@ -26,18 +43,18 @@
         <input type="checkbox" name="love" value="eat" checked>吃饭
         <input type="checkbox" name="love" value="sleep">睡觉
         <input type="checkbox" name="love" value="drink">喝水
-    </form>
+    </form> -->
     <!-- 表单实例测试2 -->
-    <form action="">
+    <!-- <form action="">
         <input type="button" value="普通的按钮"><br>
         <input type="submit"><br>
         <input type="reset"><br>
         <input type="image" value="图片"
             src="https://raw.githubusercontent.com/ChouE/image-host/master/img/20200108151222.png" width="1000"><br>
         <input type="file">
-    </form>
+    </form> -->
     <!-- 选框测试实例 -->
-    <div>
+    <!-- <div>
         <select name="select" id="">
             <option value="">小学</option>
             <option value="">初中</option>
@@ -57,13 +74,13 @@
             <option value="" selected>研究生</option>
         </select>
         <br><br><br>
-    </div>
+    </div> -->
 
     <!-- 多行文本输入框测试实例 -->
-    <textarea cols="30" rows="10">1111</textarea>
-    <br>
+    <!-- <textarea cols="30" rows="10">1111</textarea>
+    <br> -->
     <!-- 加语义的表单 -->
-    <fieldset>
+    <!-- <fieldset>
         <legend>账号信息</legend>
         姓名：<input type="text" name="" id="">芜湖<br>
         密码：<input type="text" size="50">
@@ -90,15 +107,65 @@
     <input type="range" name="" id="">滑动条
     <br>
     <input type="color" name="" id="">拾色器
-    <br>
+    <br> -->
     <!-- 连接list 文本框可以输入文本，也可以在datalist中选择数据，而且会有补全的提示功能，html5标签 -->
-    <input type="text" list="mydata">
+    <!-- <input type="text" list="mydata">
     <datalist id="mydata">
         <option value="本科"></option>
         <option value="大专"></option>
         <option value="研究生"></option>
     </datalist>
-    <br>
-</body>
+    <br> -->
 
+    <form action="">
+      <fieldset>
+        <legend>表单属性</legend>
+        <label for="">
+          用户名：<input
+            type="text"
+            placeholder="例如：smyhvae"
+            autofocus
+            name="userName"
+            autocomplete="on"
+            required
+          />
+        </label>
+
+        <label for=""> 电话：<input type="tel" pattern="1\d{10}" /> </label>
+
+        <label for=""> multiple的表单: <input type="file" multiple /> </label>
+
+        <!-- 上传文件-->
+        <input type="file" name="file" multiple />
+
+        <input type="submit" />
+      </fieldset>
+    </form>
+
+    <form action="">
+      <fieldset>
+        <legend>表单事件</legend>
+        <label for=""> 邮箱：<input type="email" id="txt1" /> </label>
+        <label for="">输入次数统计：<input type="text" id="txt2" /></label>
+
+        <input type="submit" />
+      </fieldset>
+    </form>
+  </body>
+  <script>
+    var txt1 = document.getElementById("txt1");
+    var txt2 = document.getElementById("txt2");
+    var num = 0;
+    txt1.oninput = function () {
+      //用户输入时触发
+
+      num++; //用户每输入一次，num自动加 1
+      //将统计数显示在txt2中
+      txt2.value = num;
+    };
+    txt1.oninvalid = function () {
+      //验证不通过时触发
+      this.setCustomValidity("亲，请输入正确哦"); //设置验证不通过时的提示文字
+    };
+  </script>
 </html>
